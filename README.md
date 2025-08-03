@@ -1,11 +1,11 @@
-# 💰 BudgetNow – Personal Expense Tracker
+# 💰 ExpensesTracker – Personal Expense Tracker
 
-**BudgetNow** is a modern web-based expense tracker that helps users manage their personal finances with ease. Built using **React.js**, **Context API**, and **Chart.js**, the application allows users to record expenses, analyze spending habits, and visualize data through interactive charts.
+**ExpensesTracker** is a modern web-based expense tracker that helps users manage their personal finances with ease. Built using **React.js**, **Context API**, and **Chart.js**, the application allows users to record expenses, analyze spending habits, and visualize data through interactive charts.
 
 
 ## 🚀 Live Demo
 
-> Coming soon (Deploy on Vercel or Netlify)
+> [click here](https://expenses-tracker-azure-tau.vercel.app/)
 
 ---
 
