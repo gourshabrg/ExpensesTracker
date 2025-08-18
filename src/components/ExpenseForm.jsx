@@ -6,7 +6,7 @@ const ExpenseForm = () => {
   const { addExpense } = useExpenses();
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState("");
-  const [category, setCategory] = useState("Food");
+  const [category, setCategory] = useState("food");
   const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -42,7 +42,7 @@ const ExpenseForm = () => {
 
       setDescription("");
       setAmount("");
-      setCategory("Food");
+      setCategory("food");
       setDate(new Date().toISOString().split("T")[0]);
     } catch (error) {
       toast.error("Failed to add expense");
@@ -60,8 +60,7 @@ const ExpenseForm = () => {
         <div>
           <label
             htmlFor="description"
-            className="block text-sm font-medium text-gray-700 mb-1"
-          >
+            className="block text-sm font-medium text-gray-700 mb-1">
             Description
           </label>
           <input
@@ -77,8 +76,7 @@ const ExpenseForm = () => {
         <div>
           <label
             htmlFor="amount"
-            className="block text-sm font-medium text-gray-700 mb-1"
-          >
+            className="block text-sm font-medium text-gray-700 mb-1">
             Amount
           </label>
           <input
@@ -94,8 +92,7 @@ const ExpenseForm = () => {
         <div>
           <label
             htmlFor="category"
-            className="block text-sm font-medium text-gray-700 mb-1"
-          >
+            className="block text-sm font-medium text-gray-700 mb-1">
             Category
           </label>
           <select
@@ -104,8 +101,7 @@ const ExpenseForm = () => {
             value={category}
             onChange={(e) => setCategory(e.target.value)}
             className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-expense-light focus:border-transparent transition-all"
-            disabled={isSubmitting}
-          >
+            disabled={isSubmitting}>
             {categoryOptions.map((option) => (
               <option key={option.value} value={option.value}>
                 {option.label}
@@ -117,8 +113,7 @@ const ExpenseForm = () => {
         <div>
           <label
             htmlFor="date"
-            className="block text-sm font-medium text-gray-700 mb-1"
-          >
+            className="block text-sm font-medium text-gray-700 mb-1">
             Date
           </label>
           <input
@@ -133,8 +128,7 @@ const ExpenseForm = () => {
         <button
           type="submit"
           className="w-full bg-expense text-white py-2  rounded-md hover:bg-expense-dark font-medium focus:outline-none focus:ring-2 focus:ring-expense-light  transition-all"
-          disabled={isSubmitting}
-        >
+          disabled={isSubmitting}>
           {isSubmitting ? "Adding..." : "Add Expense"}
         </button>
       </form>
